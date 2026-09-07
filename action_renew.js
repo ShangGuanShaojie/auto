@@ -372,8 +372,8 @@ async function attemptTurnstileCdp(page) {
                 }
 
                 if (cdpClickResult) {
-                    console.log('   >> 登录 CDP 点击生效。正在等待最多 10秒 Cloudflare 成功标志...');
-                    for (let waitSec = 0; waitSec < 10; waitSec++) {
+                    console.log('   >> 登录 CDP 点击生效。正在等待最多 6秒 Cloudflare 成功标志...');
+                    for (let waitSec = 0; waitSec < 6; waitSec++) {
                         const frames = page.frames();
                         let isSuccess = false;
                         for (const f of frames) {
